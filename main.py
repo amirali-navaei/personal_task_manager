@@ -1,17 +1,15 @@
-from tasks import add_task, display_tasks
+from tasks import add_task, display_tasks, save_tasks, load_tasks
+name = input("enter your name: ")
+print(f"welcome, {name}!")
+tasks = load_tasks()
 
-name = input("Enter your name: ")
-
-print(f"Welcome, {name}!")
-
-tasks = []
 
 while True:
-    task = input("Enter a task or type 'done' to finish: ")
+    task = input("enter a task or type done to finish: ")
 
     if task.lower() == "done":
         break
 
     add_task(tasks, task)
-
+save_tasks(tasks)
 display_tasks(tasks)

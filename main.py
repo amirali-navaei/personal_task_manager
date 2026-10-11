@@ -2,13 +2,8 @@ import os
 from dotenv import load_dotenv
 
 from tasks import add_task, display_tasks, load_tasks, save_tasks
-
-
 load_dotenv()
-
-
 name = input("Enter your name: ")
-
 print(f"Welcome, {name}!")
 
 
@@ -34,8 +29,8 @@ while True:
     if task.lower() == "done":
         break
 
-    add_task(tasks, task)
+    priority = input("Enter priority (low/medium/high): ")
 
+    add_task(tasks, task, priority)
 save_tasks(tasks)
-
 display_tasks(tasks)

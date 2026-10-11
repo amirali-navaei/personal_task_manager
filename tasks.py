@@ -1,4 +1,4 @@
-def add_task(tasks, task):
+def add_task(tasks, task , priority):
     tasks.append(task)
 
 

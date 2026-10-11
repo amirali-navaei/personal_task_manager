@@ -28,6 +28,7 @@ The project also includes an Admin Mode. The admin password is stored securely u
 - Admin Mode
 - Admin password stored using an environment variable
 - Private files excluded from Git using `.gitignore`
+- Assign a priority level (low, medium, or high) to each task
 ## Project Structure
 ```text
 personal_task_manager/
@@ -146,11 +147,23 @@ Your tasks:
 
 Future improvements may include:
 
-- Task priority
-- Task status
+- Task status (Done/Pending)
 - Task editing
 - Task deletion
-
+- Task search
+## Task Priority
+Users can assign a priority level to each task.
+Available priority levels:
+- low
+- medium
+- high
+### Example
+```text
+Your tasks:
+- Study Python | high
+- Buy groceries | low
+- Finish homework | medium
+```
 ## Contributing
 
 
